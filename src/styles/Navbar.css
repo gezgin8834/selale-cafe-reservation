@@ -1,0 +1,90 @@
+body, html {
+  background: linear-gradient(to bottom right, #5e57e2, #f8f9fa)!important;
+  font-family: 'Poppins', sans-serif !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
+
+/* Marka ismi */
+.navbar-custom .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+    color: #b0a1ce !important;
+}
+
+/* Nav bağlantıları */
+.navbar-custom .nav-link {
+font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+    color: #b0a1ce !important;
+
+
+}
+
+/* Aktif bağlantı (örn: text-warning) */
+.navbar-custom .nav-link.text-warning {
+  color: #f1c40f !important;
+}
+
+/* Pasif bağlantılar */
+.navbar-custom .nav-link.text-dark-subtle {
+    background-color: transparent;
+  color: #b0a1ce !important;
+}
+
+/* Hover efekti */
+.navbar-custom .nav-link:hover {
+   color: #fff !important;
+}
+
+/* Çıkış butonu */
+.navbar-custom .btn {
+  font-size: 0.9rem;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  transition: 0.3s ease;
+   background-color: transparent !important;
+  color: #b0a1ce !important;
+}
+
+.navbar-custom .btn:hover {
+    color: #fff !important;
+  background-color: #b0a1ce !important;
+}
+
+/* Hamburger icon (NavbarToggler) */
+.navbar-toggler {
+  width: 50px;
+  border: none;
+  background: transparent !important;
+  outline: none;
+  color: #afb2b4 !important;
+   transform: rotate(180deg) !important;
+  top: 0;
+}
+
+
+
+
+@media (max-width: 767px) {
+
+  .navbar-custom {
+   display:none;
+  }
+
+  .navbar-custom .nav-link {
+    display:none;
+    margin: 0.3rem 0;
+  }
+
+  .navbar-custom .btn {
+    display:none;
+    margin-top: 1rem;
+  }
+}
+
+

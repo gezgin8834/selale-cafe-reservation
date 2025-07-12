@@ -1,0 +1,121 @@
+body, html {
+  background: linear-gradient(to bottom right, #5e57e2, #f8f9fa)!important;
+  font-family: 'Poppins', sans-serif !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+   overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+/* AdminLogin.css */
+
+.admin-login-container {
+border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(232, 233, 233, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  }
+
+.admin-login-form input {
+  border-radius: 10px;
+  padding: 0.75rem;
+  font-size: 1rem !important;
+  }
+
+ .admin-login-form input::placeholder {
+    color: #b0a1ce !important;
+}
+
+.h3-Title {
+      color: #b0a1ce !important;
+    }
+
+.admin-login-form  {
+  margin-top: 0 auto !important;
+  padding: 0.75rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.admin-login-form button {
+  margin-top: 0.rem;
+  padding: 0.75rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+   background-color: transparent !important;
+  color: #b0a1ce !important;
+}
+
+.admin-login-form button:hover {
+color: #fff !important;
+
+}
+
+.admin-login-alert {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.password-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  padding-right: 2.5rem !important; /* Buton boşluğu bırak */
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #b0a1ce;
+}
+
+
+/* Responsive: Mobil ekranlar için */
+@media screen and (max-width: 767px) {
+  .admin-login-container {
+  padding: 1rem !important;
+  max-width: 480px !important;
+  margin: auto !important;
+}
+
+  
+ .admin-login-form input {
+    font-size: 0.9rem !important;
+    padding: 10px;
+    }
+
+    .admin-login-form button {
+  margin:0px auto!important;
+  padding: 14px !important;
+  font-weight: bold !important;
+  font-size: 0.9rem !important;
+  border-radius: 14px !important;
+  color: #b0a1ce !important;
+}
+
+.admin-login-form:hover {
+  color: #afb2b4 !important;
+}
+
+ 
+
+}
+
+

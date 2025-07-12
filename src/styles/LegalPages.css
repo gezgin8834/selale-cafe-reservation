@@ -1,0 +1,71 @@
+/* Kvkk ve Cerez Politikası sayfaları için ortak stil */
+
+.legal-container {
+  width: 600px !important;
+  margin: 0 auto;
+  padding: 2rem;
+  background:#b0a1ce00 !important;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #b0a1ce;
+  line-height: 1.6;
+}
+
+.legal-container h3 {
+    font-weight: 600 !important;
+    color: #b0a1ce !important;
+    margin-bottom: 1rem;
+   font-size: 0.90rem;
+  }
+
+.legal-container ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+    color: #b0a1ce !important;
+
+}
+
+.legal-container p,
+.legal-container li {
+  font-size: 0.90rem !important;
+  font-weight: 400 !important;
+    color: #b0a1ce !important;
+
+}
+
+.legal-container a {
+  text-decoration: none;
+   background-color: transparent !important;
+    color: #b0a1ce !important;
+}
+
+.legal-container a:hover {
+  text-decoration: underline;
+}
+
+.kvkk-checkbox {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.custom-checkbox {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px; 
+   transform: scale(1.2);
+  accent-color: #6c63ff; 
+  cursor: pointer;
+}
+
+.kvkk-checkbox label a {
+  text-decoration: underline;
+ background-color: transparent !important;
+  color:#8b84af !important;
+}
+
+.kvkk-checkbox label a:hover {
+  color: #b0a1ce  !important;
+ 
+}
+
+
+

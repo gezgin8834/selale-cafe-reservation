@@ -1,0 +1,84 @@
+body, html {
+ font-family: 'Poppins', sans-serif !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+ @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Kart yapısına cam efekti */
+.card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+   animation: fadeIn 0.6s ease-out;
+}
+
+/* Başlık */
+.card-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+color: #b0a1ce !important;
+}
+
+/* Metin alanları */
+.card-text {
+    text-align:center;
+  font-size: 1.1rem;
+color: #b0a1ce !important;
+  margin-bottom: 0.75rem;
+}
+
+/* Buton alanı */
+button {
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  padding: 0.75rem 1.5rem !important;
+  transition: all 0.3s ease !important;
+ background-color: transparent !important;
+  color: #b0a1ce !important;
+
+}
+
+button:hover {
+   color: #fff !important;
+  background-color: #b0a1ce !important;
+}
+
+
+/* Responsive (Mobil) uyumluluk */
+@media (max-width: 767px) {
+  .card {
+    padding: 1.2rem 1rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+  }
+ 
+}
+

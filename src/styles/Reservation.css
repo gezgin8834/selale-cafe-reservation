@@ -1,0 +1,102 @@
+body, html {
+  font-family: 'Poppins', sans-serif !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+ overflow-x: hidden;
+  overflow-y: auto;
+  
+}
+
+
+
+/* Cam efekti (glassmorphism) için */
+.Reservation-Container {
+   width: 100%;
+  max-width: 600px !important;
+  margin: 2rem auto !important;
+  box-sizing: border-box;
+  padding: 2rem !important;
+}
+
+.glass {
+  backdrop-filter: blur(8px);
+  border-radius: 1.5rem;
+}
+
+/* Başlık */
+.h5-Title {
+  font-weight:600 !important;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+    color: #b0a1ce !important;
+}
+
+/* Form alanları için genel düzen */
+form input,
+form select {
+    color: #b0a1ce !important;
+  border-radius: 1rem !important;
+  padding: 0.75rem 1rem;
+  font-size:1rem !important;
+  transition: all 0.3s ease;
+}
+
+.Label-Group {
+    color: #b0a1ce !important;
+}
+
+.Input-Group::placeholder {
+      color: #b0a1ce !important;
+
+}
+
+/* Buton stil */
+button[type="submit"] {
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border-radius: 2rem;
+  transition:0.3s ease !important;
+   transform : 0.2s ease !important;
+    background-color: transparent !important;
+  color: #b0a1ce !important;
+}
+
+button[type="submit"]:hover {
+   color: #fff !important;
+  background-color: #b0a1ce !important;
+}
+
+
+ /* 🔹 Mobil uyumluluk */
+@media (max-width: 767px) {
+  body, html {
+    overflow-y: auto !important;
+  }
+  .Reservation-Container {
+    margin: 10px auto !important;
+    padding: 1rem !important;
+    max-width: 95% !important;
+  }
+
+  .glass {
+    padding: 2rem 1rem !important;
+    margin: 0 0.5rem;
+  }
+
+  form input,
+  form select {
+    font-size: 0.95rem;
+    padding: 0.6rem 0.9rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  button[type="submit"] {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+}

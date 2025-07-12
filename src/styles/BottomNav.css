@@ -1,0 +1,64 @@
+/* src/styles/BottomNav.css */
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+ display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #e0e0e0;
+ box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+}
+
+.bottom-nav button {
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 12px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.bottom-nav button:hover {
+  color: #5e57e2;
+  transform: scale(1.05);
+}
+
+.bottom-nav button.active {
+  color: #5e57e2;
+  font-weight: 200 !important;
+  position: relative;
+}
+
+.bottom-nav button.active::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  width: 6px;
+  height: 6px;
+  background-color: #5e57e2;
+  border-radius: 50%;
+}
+
+.bottom-nav .label {
+  font-size: 10px;
+  margin-top: 0;
+}
+
+/* Mobil küçük ekran için */
+@media (max-width: 767px) {
+  .bottom-nav button {
+    font-size: 10px;
+  }
+  .bottom-nav .label {
+    font-size: 9px;
+  }
+}

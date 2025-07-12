@@ -1,0 +1,168 @@
+body, html {
+  font-family: 'Poppins', sans-serif !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  
+}
+
+
+/* Glassmorphism kart için */
+.card {
+  margin-top: 20px;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 2rem !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.glass {
+    font-size: 18px;
+  backdrop-filter: blur(10px);
+  border-radius: 2rem;
+  transition: all 0.3s ease-in-out;
+    color: #b0a1ce !important;
+
+}
+
+.Card-Title {
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    color: #b0a1ce !important;
+}
+
+.Card-Text {
+  font-size:18px !important;
+  font-weight: 500 !important;
+}
+
+
+
+/* Tema butonları için */
+.btn-theme {
+  transition: all 0.2s ease-in-out !important;
+font-size: 1rem;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+   background-color: transparent;
+  color: #b0a1ce !important;
+}
+
+.btn-theme:hover {
+  transform: scale(1.02) !important;
+  color: #fff !important;
+  background-color: #b0a1ce !important;
+}
+
+.btn-theme-primary {
+  transition: all 0.2s ease-in-out !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+    color: #b0a1ce !important;
+}
+
+
+.btn-theme-primary:hover {
+  transform: scale(1.02);
+ color: #fff !important;
+  background-color: #b0a1ce !important;
+}
+
+/* Modal içerik için */
+body.modal-open {
+overflow: hidden !important;
+}
+
+
+.modal-content {
+  max-width: 100% !important;
+  border-radius: 1.5rem;
+  padding: 2rem !important;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15) !important;
+   color: #afb2b4 !important;
+}
+
+
+
+.modal-header, .modal-body, .modal-footer {
+color: #b0a1ce !important;
+border:none;
+}
+
+.p-Modal, .p-Span {
+    color: #b0a1ce !important;
+}
+
+.Button-Modal {
+  font-size: 0.9rem;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  transition: 0.3s ease;
+   background-color: transparent;
+  color: #b0a1ce !important;
+}
+
+.Button-Modal:hover {
+  color: #fff !important;
+  background-color: #b0a1ce !important;
+}
+
+/* Mobil duyarlılık */
+@media (max-width: 767px) {
+ 
+ .card {
+font-size: 12px !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 2rem !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.glass {
+    font-size: 10px !important;
+    font-weight: 400 !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.Card-Title {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.Card-Text {
+  font-size:10px !important;
+  font-weight: 400 !important;
+}
+
+.btn-theme-primary {
+    font-size:12px !important;
+     color: #b9b2c9 !important;
+     
+  }
+
+  .btn-theme-primary:hover {
+  transform: scale(1.02) !important;
+     color: #afb2b4 !important;
+}
+
+    .btn-theme {
+    font-size:10px !important;
+    color: #b9b2c9 !important;
+  }
+
+  .btn-theme:hover {
+ color: #afb2b4 !important;
+}
+
+  .modal-body .p-Modal, .p-Span {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+  }
+
+  .modal-body svg {
+    margin-bottom: 0.5rem;
+  }
+}

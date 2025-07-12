@@ -1,0 +1,26 @@
+body, html {
+  background: linear-gradient(to bottom right, #e5e4fa, #f8f9fa)!important;
+  font-family: 'Poppins', sans-serif !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+   overflow: hidden;
+  
+}
+
+.footer-custom {
+    color: #b0a1ce !important;
+  position: relative;
+  top: 10px;
+  bottom: 30px;
+  width: 100%;
+  text-align: center !important;
+  
+}
+
+@media screen and (max-width: 767px) {
+    .footer-custom {
+    display: none;
+  }
+}
+ 

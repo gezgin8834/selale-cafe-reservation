@@ -1,0 +1,234 @@
+/* src/styles/AdminDashboard.css */
+
+body, html {
+  background: linear-gradient(to bottom right, #e5e4fa, #f8f9fa)!important;
+  font-family: 'Poppins', sans-serif !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0px !important;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+.admin-container {
+  max-height:none !important;
+  overflow-y:visible;
+  backdrop-filter: blur(16px);
+  border-radius: 16px !important;
+  padding: 1rem;
+  margin: 10px !important;
+  margin-top: 10% !important;
+  box-shadow: 0 0 20px #b0a1ce !important;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Başlık */
+.admin-header {
+  font-weight: 600;
+  font-size: 1.5rem !important;
+  color: #b0a1ce !important;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+
+.Admin-Panel {
+ margin: 0 auto !important;
+  font-size:1rem !important;
+  font-weight: 400 !important;
+  color: #b0a1ce !important;
+}
+
+/* Butonlar */
+.admin-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:end;
+  gap: 0.5rem;
+}
+
+.reservation-table tr:hover {
+  background-color: rgba(176, 161, 206, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+
+.admin-buttons .btn {
+  font-size: 1rem !important;
+  border-radius: 8px;
+  margin-top: 5px !important;
+  transition: all 0.3s;
+  color: #b0a1ce !important;
+  border: 1px solid #b0a1ce;
+  background-color: transparent;
+}
+
+.admin-buttons .btn:hover {
+  color: #fff !important;
+  background-color: #b0a1ce !important;
+  transform: scale(1.05);
+}
+
+/* Tablo */
+.reservation-table {
+  width: 100%;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  background-color: #fff;
+  color: #b0a1ce !important;
+  overflow-x: auto;
+}
+
+.reservation-table th,
+.reservation-table td {
+  background: transparent !important;
+  color: #b0a1ce !important;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0.75rem;
+}
+
+.reservation-table th {
+  font-weight: 600 !important;
+  border-bottom: 1px solid #ddd;
+}
+
+.reservation-table td {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Buton hücresi */
+.reservation-table .btn {
+  font-size: 0.8rem;
+  padding: 6px 10px !important;
+  border: 1px solid #b0a1ce;
+  background-color: transparent;
+  color: #b0a1ce !important;
+}
+
+.reservation-table .btn:hover {
+  color: #fff !important;
+  background-color: #b0a1ce !important;
+}
+
+
+
+/* ✅ Mobil uyumlu responsive yapı */
+@media (max-width: 767px) {
+
+  .admin-container {
+  margin: 0 auto !important;
+    padding: 1rem !important;
+    max-height:750px !important;
+    height: auto !important;
+    overflow:auto !important;
+  }
+
+  /* Scrollbar (mobil) */
+  .admin-container::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .admin-container::-webkit-scrollbar-thumb {
+    background-color: #b0a1ce;
+    border-radius: 10px;
+  }
+
+  .admin-container::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .admin-header {
+    display: none;
+    font-size: 1.25rem !important;
+  }
+
+  .Admin-Panel {
+  font-size: clamp(1rem, 2vw, 1rem) !important;
+  font-weight: 400 !important;
+  color: #b0a1ce !important;
+   font-size: 1rem !important;
+}
+
+  .admin-buttons {
+    width: 100% !important;
+      max-width: 300px;
+     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .admin-buttons .btn {
+  width: 100%;
+}
+
+
+  .reservation-table {
+    font-size: 1rem !important;
+     overflow-x: auto !important;
+  }
+
+  .reservation-table thead {
+    display: none;
+  }
+
+  .reservation-table,
+  .reservation-table tbody,
+  .reservation-table tr,
+  .reservation-table td {
+    display: block;
+  }
+
+  .reservation-table tr {
+    animation-delay: 0.1s;
+    animation-fill-mode: both;
+    margin-bottom: 2px;
+    border-radius: 12px;
+    background-color: #fff;
+  }
+
+  .reservation-table td {
+    display: block !important;
+    line-height: 1.5;
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .reservation-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 1rem;
+    top: 0.75rem;
+    font-weight: 600;
+    color: #b0a1ce;
+    text-align: left;
+  }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reservation-table tr {
+  animation: fadeInUp 0.4s ease;
+}
+
+}
+
+
+
+
+
+
