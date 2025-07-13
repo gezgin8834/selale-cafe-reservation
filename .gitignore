@@ -26,7 +26,7 @@ dist-ssr
 
 # Env files
 .env
-!.env.example
+
 
 # System
 .vite
