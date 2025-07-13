@@ -1,0 +1,44 @@
+# Şelale Cafe Rezervasyon Sistemi - Kullanım Kılavuzu
+
+Bu belge, Şelale Cafe Rezervasyon Sistemi'nin müşteri ve yönetici panellerinin nasıl kullanılacağını açıklar.
+
+## 👤 Müşteri Paneli
+
+1.   Anasayfa:
+   -  Cafe tanıtımı, rezervasyon çağrısı.
+   - "Rezervasyon Yap" butonuyla yönlendirme.
+
+2. Rezervasyon Sayfası:
+   - İsim, kişi sayısı, tarih ve saat bilgisi girilir.
+   - Telefon numarası doğruluğu önemlidir.
+   - Rezervasyon gönderildiğinde sistem Firebase'e kaydeder.
+   - Başarılı kayıt sonrası onay ekranına yönlendirilir.
+
+3. Onay Sayfası:
+   - Rezervasyon detayları görüntülenir.
+   - Geri dön veya çıkış seçeneği sunulur.
+
+## 🔐 Yönetici Paneli
+
+1. Giriş Ekranı:
+   - Sadece yetkili yöneticiler giriş yapabilir.
+   - Şifreler Firestore dışı doğrulama ile kontrol edilir.
+
+2. Admin Dashboard:
+   - Aktif rezervasyonlar listelenir.
+   - Onay bekleyenler, geçmiş kayıtlar ve iptaller görüntülenebilir.
+   - "Bekleme Listesi", "Onayla", "Sil" gibi işlemler yapılabilir.
+   - Excel'e dışa aktarım, filtreleme ve sıralama desteklenir.
+
+3. Mobil Uyum:
+   - Tüm paneller mobil ve tablet uyumludur.
+   - Responsive tasarım Bootstrap 5 ile sağlanmıştır.
+
+## 🛠️ Ekstra Özellikler
+
+- Gerçek zamanlı Firestore veri güncellemesi.
+- Toast bildirimleriyle kullanıcı bilgilendirme.
+- UUID ile her rezervasyonun benzersiz ID’si.
+- Türkçe dil desteği.
+
+📌 Daha fazla bilgi için: `README.md` dosyasına bakabilirsiniz.

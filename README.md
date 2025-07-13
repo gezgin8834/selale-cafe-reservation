@@ -19,5 +19,11 @@ Bu proje, **Şelale Cafe** için geliştirilmiş modern, kullanıcı dostu bir *
 
 ### 1. Repoyu klonlayın
 ```bash
-git clone https://github.com/gezgin8834/selale-cafe-reservation.git
-cd selale-cafe-reservation
+echo "# selale-cafe-reservation" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/gezgin8834/selale-cafe-reservation.git
+git push -u origin main
+
