@@ -1,20 +1,23 @@
 {
-  "name": "cafe-reservation",
+  "name": "selale-cafe-reservation",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
-"homepage": "https://github.com/gezgin8834/selale-cafe-reservation.git",
-
+  "homepage": "https://gezgin8834.github.io/selale-cafe-reservation",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gezgin8834/selale-cafe-reservation.git"
+  },
   "scripts": {
     "dev": "npx vite",
     "build": "npx vite build",
     "lint": "eslint .",
     "preview": "npx vite preview",
-     "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "bootstrap": "^5.3.7",
+    "build": "^0.1.4",
     "firebase": "^11.10.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
