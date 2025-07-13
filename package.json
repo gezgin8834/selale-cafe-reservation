@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-"homepage": "https://github.com/gezgin8834/Selale-Cafe-.git",
+"homepage": "https://github.com/gezgin8834/selale-cafe-reservation.git",
 
   "scripts": {
     "dev": "npx vite",

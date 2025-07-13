@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: "/Selale-Cafe/", // ✅ doğru base yolu
+  base: "/selale-cafe-reservation/", // ✅ doğru base yolu
 });
