@@ -4,11 +4,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: "/Selale Cafe/", // bu satır da önemli!
-  build: {
-    outDir: "build",
-  },
-  server: {
-    historyApiFallback: true
-  }
-})
+  base: "/cafe-reservation-system/", // ✅ doğru base yolu
+});
