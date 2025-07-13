@@ -15,4 +15,9 @@ Bu proje, **Şelale Cafe** için geliştirilmiş modern, kullanıcı dostu bir *
 
 ---
 
+## 🔧 Kurulum
 
+### 1. Repoyu klonlayın
+```bash
+git clone https://github.com/gezgin8834/selale-cafe-reservation.git
+cd selale-cafe-reservation
