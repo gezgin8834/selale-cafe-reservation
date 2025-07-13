@@ -2,14 +2,18 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
+// Firebase config bilgileri .env dosyasından alınır
 const firebaseConfig = {
-  apiKey: "AIzaSyB4hJ3NKev-fz4N1sk_Db61XdD55M3pAiU",
-  authDomain: "selale-cafe-reservation-system.firebaseapp.com",
-  projectId: "selale-cafe-reservation-system",
-  storageBucket: "selale-cafe-reservation-system.firebasestorage.appspot.com",
-  messagingSenderId: "226863217894",
-  appId: "1:226863217894:web:5b4e83b8377190aa030f27"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
+// Firebase başlatılır
 const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
+const db = getFirestore(app);
+
+export { db };
