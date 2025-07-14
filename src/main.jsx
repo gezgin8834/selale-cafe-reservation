@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
  createRoot(document.getElementById('root')).render(
  <React.StrictMode>
-    <BrowserRouter basename="/cafe-reservation-system">
+    <BrowserRouter basename="/cafe-reservation-system/">
       <App />
     </BrowserRouter>
   </React.StrictMode>
