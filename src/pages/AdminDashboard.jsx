@@ -21,41 +21,6 @@ const [reservations, setReservations] = useState([]);
   const isMobile = useMediaQuery ({ maxWidth:767 });
   
 
-  
-
-  //useEffect(() => {
-  //const stored = JSON.parse(localStorage.getItem("reservations")) || [];
-  //setReservations(stored);
-//}, []);
-
-//useEffect(() => {
-    //const isAdmin = localStorage.getItem("isAdmin");
-    //if (isAdmin !== "true") {
-     // navigate("/admin"); // yetkisiz erişim
-   // }
-    //const res = localStorage.getItem("reservation");
-    //if (res) {
-    //  setReservation(JSON.parse(res));
-   //}
-  //}, [navigate]);
-
-  // useEffect(() => {
-    //const fetchData = async () => {
-     // try {
-       // const querySnapshot = await getDocs(collection(db, "reservations"));
-        //const list = querySnapshot.docs.map((doc) => ({
-          //id: doc.id,
-          //...doc.data(),
-        //}));
-        //setReservation(list);
-      //} catch (error) {
-       // console.error("Veriler alınamadı:", error);
-     // }
-    //};
-    //fetchData();
-  //}, []);
-
-
 useEffect(() => {
   const isAdmin = sessionStorage.getItem("isAdmin");
   const username = sessionStorage.getItem("adminUsername") || "";

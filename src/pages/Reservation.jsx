@@ -9,8 +9,7 @@ import ReservationService from "../utils/ReservationService"; // yeni ekleme
 
 
 
-//import { db } from "../firebase.js";
-//import { collection, addDoc } from "firebase.js/firestore.js";
+;
 
 const tables = [
   { id: 1, name: "Masa 1" },

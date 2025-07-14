@@ -1,5 +1,4 @@
-// src/pages/Home.jsx
-//import React from "react";
+
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Button, Card, CardBody, CardTitle, CardText, Modal, ModalHeader, ModalBody, ModalFooter, } from "reactstrap";
 import { useNavigate } from "react-router-dom";
@@ -7,37 +6,15 @@ import { FaCoffee } from "react-icons/fa";
 import "../styles/Home.css";
 
 
-//const translations = {
-  //tr: {
-    //title: "☕️ Cafe Rezervasyon Sistemi",
-    //text: "Masanızı kolayca ayırtın veya yönetici paneline erişin.",
-    //reserve: "📅 Rezervasyon Yap",
-    //admin: "🔒 Yönetici Girişi",
-  //},
-  //en: {
-    //title: "☕️ Cafe Reservation System",
-    //text: "Easily reserve your table or access the admin panel.",
-    //reserve: "📅 Make a Reservation",
-    //admin: "🔒 Admin Login",
-  //},
-//};
-
-
-  const Home = () => {
+const Home = () => {
   const navigate = useNavigate();
    const [showIntroModal, setShowIntroModal] = useState(false);
 
-  //const navigate = useNavigate();
-  // // 🔹 Modal açık/kapalı durumunu kontrol eder
-  //const [isModalOpen, setIsModalOpen] = useState(false);
-//const toggleModal = () => setIsModalOpen(!isModalOpen);
-  
+ 
 
 
   useEffect(() => {
-  //const alreadyShown = sessionStorage.getItem("introModalShown");
-   //if (!alreadyShown) {
-    //setIsModalOpen(true);
+ 
      const shownBefore = sessionStorage.getItem("introModalShown");
     if (!shownBefore) {
       setShowIntroModal(true);
@@ -45,12 +22,6 @@ import "../styles/Home.css";
   }
 }, []);
 
-//const [language, setLanguage] = useState("tr");
-  //const t = translations[language];
-
-   //useEffect(() => {
-   // document.title = t.title;
-  //}, [language]);
 
    const handleClose = () => {
     setShowIntroModal(false);
@@ -134,8 +105,6 @@ import "../styles/Home.css";
   );
 };
 
-
-           
 
 export default Home;
 

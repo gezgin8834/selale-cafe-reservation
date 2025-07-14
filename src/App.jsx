@@ -12,19 +12,6 @@ import BottomNav from "./components/BottomNav";
 
 
 
-
-
-//function App() {
-  
-
-  //return (
-   // <div className="App">
-     // <CustomNavbar/>
-      //<AppRoutes />
-    //</div>
-  //);
-//};
-
 const App = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
 

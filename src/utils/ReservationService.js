@@ -1,27 +1,6 @@
   import { v4 as uuidv4 } from 'uuid';
 
 
-// src/utils/ReservationService.js
-//class ReservationService {
- // static getLast() {
-  //  return JSON.parse(localStorage.getItem("onay")) || [];
-  //}
-
-   //static getLast() {
-    //return JSON.parse(localStorage.getItem("onay")) || null;
-  //}
-
-  //static add(reservation) {
-    //const existing = this.getAll();
-    //const updated = [...existing, reservation];
-    //localStorage.setItem("reservations", JSON.stringify(updated));
-    //localStorage.setItem("onay", JSON.stringify(reservation)); // opsiyonel
-  //}
-//}
-
-//export default ReservationService;
-
-// src/utils/ReservationService.js
 
 class ReservationService {
   static getAll() {
@@ -32,12 +11,7 @@ class ReservationService {
     return JSON.parse(localStorage.getItem("onay")) || null;
   }
 
-  //static add(reservation) {
-    //const existing = this.getAll();
-    //const updated = [...existing, reservation];
-    //localStorage.setItem("reservations", JSON.stringify(updated));
-    //localStorage.setItem("onay", JSON.stringify(reservation)); // opsiyonel
-  //}
+  
 
 
 static add(reservation) {

@@ -10,7 +10,6 @@ body, html {
 
 
 
-/* Cam efekti (glassmorphism) için */
 .Reservation-Container {
    width: 100%;
   max-width: 600px !important;
@@ -24,7 +23,6 @@ body, html {
   border-radius: 1.5rem;
 }
 
-/* Başlık */
 .h5-Title {
   font-weight:600 !important;
   margin-bottom: 1.5rem;
@@ -51,7 +49,6 @@ form select {
 
 }
 
-/* Buton stil */
 button[type="submit"] {
   font-weight: 400;
   font-size: 1rem;

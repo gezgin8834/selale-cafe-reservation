@@ -46,17 +46,7 @@ const CustomNavbar = () => {
       }
        }}
 
-        //onClick={() => navigate("/")}
-        //onClick={() => {
-          //sessionStorage.removeItem("introModalShown");
-   // if (location.pathname === "/") {
-      //window.location.reload(); // Ana sayfadaysa sayfayı yenile
-    //} else {
-     //navigate("/"); // Değilse ana sayfaya yönlendir
-    //}
- // }}
-
-        className="text-white text-opacity-90 fw-bold"
+    className="text-white text-opacity-90 fw-bold"
         style={{ cursor: "pointer" }}
       >
         ☕ Şelale Cafe
@@ -73,7 +63,6 @@ const CustomNavbar = () => {
               className={({ isActive }) =>
                  `nav-link ${isActive ? "text-warning fw-bold" : "text-dark-subtle"}`
 
-                //isActive ? "nav-link text-warning fw-bold" : "nav-link text-dark-subtle"
               }
              
             >
@@ -87,7 +76,6 @@ const CustomNavbar = () => {
               className={({ isActive }) =>
                 `nav-link ${isActive ? "text-warning fw-bold" : "text-dark-subtle"}`
 
-                //isActive ? "nav-link text-warning fw-bold" : "nav-link text-dark"
               }
           
             >
@@ -103,7 +91,6 @@ const CustomNavbar = () => {
                   to="/admin/panel"
                   className={({ isActive }) =>
                     `nav-link ${isActive ? "text-warning fw-bold" : "text-dark-subtle"}`
-                    //isActive ? "nav-link text-warning fw-bold" : "nav-link text-dark-subtle"
                   }
                 >
                   Panel
