@@ -5,7 +5,7 @@
 "homepage": "https://gezgin8834.github.io/cafe-reservation-system/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gezgin8834/cafe-reservation-system/"
+    "url": "https://github.com/gezgin8834/cafe-reservation-system.git"
   },
   "scripts": {
     "dev": "npx vite",
