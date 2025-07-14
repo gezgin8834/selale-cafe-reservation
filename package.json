@@ -2,10 +2,10 @@
   "name": "selale-cafe-reservation",
   "private": true,
   "version": "0.0.0",
-"homepage": "https://gezgin8834.github.io/cafe-reservation-system/"
+"homepage": "https://gezgin8834.github.io/cafe-reservation-system/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gezgin8834/cafe-reservation-system.git"
+    "url": "https://github.com/gezgin8834/cafe-reservation-system/"
   },
   "scripts": {
     "dev": "npx vite",
