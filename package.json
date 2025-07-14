@@ -2,7 +2,7 @@
   "name": "selale-cafe-reservation",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/gezgin8834/cafe-reservation-system.git",
+"homepage": "https://gezgin8834.github.io/cafe-reservation-system/"
   "repository": {
     "type": "git",
     "url": "https://github.com/gezgin8834/cafe-reservation-system.git"
@@ -13,7 +13,7 @@
     "lint": "eslint .",
     "preview": "npx vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.3.7",
