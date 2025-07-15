@@ -6,7 +6,7 @@ import Confirmation from "../pages/Confirmation.jsx";
 import AdminLogin from "../pages/AdminLogin.jsx";
 import AdminDashboard from "../pages/AdminDashboard.jsx";
 import PrivateRoute from "../components/PrivateRoute.jsx";
-import Kvkk from "../pages/kvkk.jsx";
+import Kvkk from "../pages/Kvkk.jsx";
 import CerezPolitikasi from "../pages/CerezPolitikasi.jsx"; 
 
 
