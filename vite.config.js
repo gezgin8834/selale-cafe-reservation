@@ -3,7 +3,6 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === 'production' && process.env.BUILD_ENV === 'github'
-    ? '/cafe-reservation-system/'
-    : '/',
+ base: process.env.BUILD_ENV === 'github' ? '/cafe-reservation-system/' : '/'
+
 });
