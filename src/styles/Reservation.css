@@ -77,14 +77,13 @@ button[type="submit"]:hover {
     margin: 10px auto !important;
     padding: 1rem !important;
     max-width: 95% !important;
-      background-color: #b0a1ce !important;
-
+     
   }
 
   .glass {
     padding: 2rem 1rem !important;
     margin: 0 0.5rem;
-      background-color: #b0a1ce !important;
+     
 
     
   }
@@ -93,6 +92,7 @@ button[type="submit"]:hover {
   form select {
     font-size: 0.95rem;
     padding: 0.6rem 0.9rem;
+     background-color: #b0a1ce !important;
   }
 
   h5 {
