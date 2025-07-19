@@ -154,7 +154,8 @@ font-size: 12px !important;
   }
 
   .btn-theme:hover {
- color: #afb2b4 !important;
+ transform: scale(1.02) !important;
+     color: #afb2b4 !important;
 }
 
   .modal-body .p-Modal, .p-Span {
