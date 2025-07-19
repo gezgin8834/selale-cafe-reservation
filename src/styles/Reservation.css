@@ -22,6 +22,8 @@ body, html {
 .glass {
   backdrop-filter: blur(8px);
   border-radius: 1.5rem;
+    background-color: #b0a1ce !important;
+
 }
 
 .h5-Title {
@@ -83,16 +85,13 @@ button[type="submit"]:hover {
   .glass {
     padding: 2rem 1rem !important;
     margin: 0 0.5rem;
-     
-
-    
   }
 
   form input,
   form select {
     font-size: 0.95rem;
     padding: 0.6rem 0.9rem;
-     background-color: #b0a1ce !important;
+     
   }
 
   h5 {
