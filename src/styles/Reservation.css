@@ -80,9 +80,10 @@ button[type="submit"]:hover {
   }
 
   .glass {
-     backdrop-filter: blur(8px);
     padding: 2rem 1rem !important;
     margin: 0 0.5rem;
+      background-color: #b0a1ce !important;
+
   }
 
   form input,
