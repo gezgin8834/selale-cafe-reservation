@@ -91,7 +91,12 @@ color: #b0a1ce !important;
 border:none;
 }
 
-.p-Modal, .p-Span {
+.p-Modal {
+  font-size: 12px !important;
+   color: #b0a1ce !important;
+}
+ .p-Span {
+  font-size: 12px !important;
     color: #b0a1ce !important;
 }
 
