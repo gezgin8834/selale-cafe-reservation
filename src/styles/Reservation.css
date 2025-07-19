@@ -22,7 +22,7 @@ body, html {
 .glass {
   backdrop-filter: blur(8px);
   border-radius: 1.5rem;
-    background-color: #b0a1ce !important;
+    background-color:transparent !important;
 
 }
 
