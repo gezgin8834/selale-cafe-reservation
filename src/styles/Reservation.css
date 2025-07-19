@@ -77,6 +77,8 @@ button[type="submit"]:hover {
     margin: 10px auto !important;
     padding: 1rem !important;
     max-width: 95% !important;
+      background-color: #b0a1ce !important;
+
   }
 
   .glass {
@@ -84,6 +86,7 @@ button[type="submit"]:hover {
     margin: 0 0.5rem;
       background-color: #b0a1ce !important;
 
+    
   }
 
   form input,
