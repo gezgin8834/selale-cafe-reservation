@@ -30,7 +30,18 @@ useEffect(() => {
     return;
   }
 
-  // Örnek bekleme listesi verisi ekleme
+ 
+setAdminFullname(fullname);
+
+   const reservationData = JSON.parse(localStorage.getItem("reservations")) || [];
+     setReservations(reservationData);
+
+      const waitlistData = JSON.parse(localStorage.getItem("waitlist")) || [];
+  setWaitlist(waitlistData);
+
+}, [navigate]);
+
+ // Örnek bekleme listesi verisi ekleme
 const addMockWaitlistData = () => {
   const mockData = [
     {
@@ -63,16 +74,6 @@ const addMockWaitlistData = () => {
   setWaitlist(mockData);
 };
 
-
-  setAdminFullname(fullname);
-
-   const reservationData = JSON.parse(localStorage.getItem("reservations")) || [];
-     setReservations(reservationData);
-
-      const waitlistData = JSON.parse(localStorage.getItem("waitlist")) || [];
-  setWaitlist(waitlistData);
-
-}, [navigate]);
 
 
 const handleLogout = () => {
