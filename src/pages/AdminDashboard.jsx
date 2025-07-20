@@ -30,6 +30,40 @@ useEffect(() => {
     return;
   }
 
+  // Örnek bekleme listesi verisi ekleme
+const addMockWaitlistData = () => {
+  const mockData = [
+    {
+     name: "Hüseyin Uzun",
+      phone: "05398444512",
+      guests: "3",
+      date: "2025-07-21",
+      time: "19:00",
+      table: ""
+    },
+    {
+     name: "Hüseyin Uzun",
+      phone: "05398444512",
+      guests: "2",
+      date: "2025-07-21",
+      time: "20:00",
+      table: ""
+    },
+    {
+      name: "Hüseyin Uzun",
+      phone: "05398444512",
+      guests: "4",
+      date: "2025-07-21",
+      time: "18:30",
+      table: ""
+    }
+  ];
+
+  localStorage.setItem("waitlist", JSON.stringify(mockData));
+  setWaitlist(mockData);
+};
+
+
   setAdminFullname(fullname);
 
    const reservationData = JSON.parse(localStorage.getItem("reservations")) || [];
