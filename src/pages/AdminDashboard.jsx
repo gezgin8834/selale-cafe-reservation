@@ -237,10 +237,11 @@ const handleLogout = () => {
       </div>
     </>
   ) : (
-    <Alert color="warning" className="mt-3 bg-light text-dark-subtle border border-warning">
+    <Alert> 
+    <h2 className="Admin-Panel"></h2>
   Bekleme listesi şu anda boş. Yeni talepler buraya yansıyacaktır.
 </Alert>
-
+    
   )}
 </>
 
