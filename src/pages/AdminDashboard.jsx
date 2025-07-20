@@ -48,6 +48,19 @@ const handleLogout = () => {
     navigate("/");
   };
 
+  const handleApprove = (index) => {
+  const approvedItem = waitlist[index];
+  const updatedWaitlist = waitlist.filter((_, i) => i !== index);
+  const updatedReservations = [...reservations, approvedItem];
+
+  setWaitlist(updatedWaitlist);
+  setReservations(updatedReservations);
+  localStorage.setItem("waitlist", JSON.stringify(updatedWaitlist));
+  localStorage.setItem("reservations", JSON.stringify(updatedReservations));
+  toast.success("Rezervasyon onaylandı ve aktif listeye taşındı!");
+};
+
+
    // 🔸 Bireysel rezervasyon sil
   const handleDelete = (indexToDelete, listType= "reservations") => {
     const updated = (listType === "waitlist" ? waitlist : reservations).filter(
@@ -171,20 +184,29 @@ const handleLogout = () => {
             <th>Tarih</th>
             <th>Saat</th>
             <th>Masa</th>
-            <th>Sil</th>
+            <th>İşlem</th>
           </tr>
         </thead>
         <tbody>
           {waitlist.map((res, index) => (
             <tr key={index} className={res.conflict ? "table-danger" : ""}>
-                    <td data-label="#"> {index + 1} </td>
-      <td data-label="Ad Soyad"> {res.name} </td>
-      <td data-label="Telefon"> {res.phone} </td>
-      <td data-label="Kişi"> {res.guests} </td>
-      <td data-label="Tarih"> {res.date} </td>
-      <td data-label="Saat"> {res.time} </td>
-      <td data-label="Masa"> {res.table} </td>
+            <td data-label="#"> {index + 1} </td>
+          <td data-label="Ad Soyad"> {res.name} </td>
+           <td data-label="Telefon"> {res.phone} </td>
+         <td data-label="Kişi"> {res.guests} </td>
+         <td data-label="Tarih"> {res.date} </td>
+         <td data-label="Saat"> {res.time} </td>
+         <td data-label="Masa"> {res.table} </td>
               <td>
+                 <Button
+                  color="light"
+                  size="sm"
+                  className="bg-body-secondary glass text-dark-subtle"
+                  onClick={() => handleApprove(index)}
+                >
+                  ✅ Onayla
+                </Button>
+
                 <Button
                   color="light"
                   size="sm"
@@ -206,6 +228,7 @@ const handleLogout = () => {
             if (window.confirm("Bekleme listesini temizlemek istiyor musunuz?")) {
               localStorage.removeItem("waitlist");
               setWaitlist([]);
+              toast.success("Bekleme listesi temizlendi.");
             }
           }}
         >
