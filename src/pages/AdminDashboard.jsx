@@ -86,7 +86,7 @@ const handleLogout = () => {
         <Row className="justify-content-between align-items-center">
         <Col>
           <h2 className="mb-5 Admin-Panel">📋 Admin Paneli</h2>
-          <p className="ms-1 Admin-Panel">👤 Hoş geldin, <strong>{adminFullname}</strong></p>
+          <p className="ms-1 Admin-Panel">👤 Hoş geldiniz, <strong>{adminFullname}</strong></p>
 
         </Col>
         <Col className="text-end admin-buttons">
