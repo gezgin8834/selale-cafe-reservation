@@ -14,7 +14,7 @@ import { toast } from "react-toastify";
 
 
 const AdminDashboard = () => {
-  const [adminUsername, setAdminUsername] = useState("");
+  const [adminFullname, setAdminFullname] = useState("");
 const [waitlist, setWaitlist] = useState([]);
 const [reservations, setReservations] = useState([]);
   const navigate = useNavigate();
@@ -23,14 +23,14 @@ const [reservations, setReservations] = useState([]);
 
 useEffect(() => {
   const isAdmin = sessionStorage.getItem("isAdmin");
-  const username = sessionStorage.getItem("adminUsername") || "";
+  const fullname = sessionStorage.getItem("adminFullname") || "";
   
   if (isAdmin !== "true") {
     navigate("/admin");
     return;
   }
 
-  setAdminUsername(username);
+  setAdminFullname(fullname);
 
    const reservationData = JSON.parse(localStorage.getItem("reservations")) || [];
      setReservations(reservationData);
@@ -43,7 +43,7 @@ useEffect(() => {
 
 const handleLogout = () => {
     sessionStorage.removeItem("isAdmin");
-      sessionStorage.removeItem("adminUsername");
+      sessionStorage.removeItem("adminFullname");
 
     navigate("/");
   };
@@ -86,7 +86,7 @@ const handleLogout = () => {
         <Row className="justify-content-between align-items-center">
         <Col>
           <h2 className="mb-5 Admin-Panel">📋 Admin Paneli</h2>
-          <p className="ms-1 Admin-Panel">👤 Hoş geldin, <strong>{adminUsername}</strong></p>
+          <p className="ms-1 Admin-Panel">👤 Hoş geldin, <strong>{adminFullname}</strong></p>
 
         </Col>
         <Col className="text-end admin-buttons">

@@ -98,7 +98,7 @@ return;
 
  return (
     <Container className="Reservation-Container">
-      <Row className="justify-content-center shadow-lg p-2 light  glass mt-5">
+      <Row className="justify-content-center shadow-lg p-2 light  glass text-dark-subtle mt-5">
         <Col xs={12} sm={10} md={10} lg={8}>
           <h5 className="text-center h5-Title">📅 Rezervasyon Yap</h5>
           <Form onSubmit={handleSubmit}>
