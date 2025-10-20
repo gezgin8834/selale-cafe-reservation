@@ -24,6 +24,6 @@ git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote set-url origin https://github.com/gezgin8834/cafe-reservation-system/
+git remote set-url origin https://github.com/gezgin8834/selale-cafe-reservation/
 git push -u origin main
 

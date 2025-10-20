@@ -40,7 +40,7 @@ Yönetici Rezervasyonları görüntüleme, onaylama, iptal etme,silme
 📂 Kurulum ve Çalıştırma Adımları
 1. Kaynak kodu GitHub üzerinden klonlayın:
 bash
-git clone https://github.com/gezgin8834/cafe-reservation-system.git
+git clone https://github.com/gezgin8834/selale-cafe-reservation.git
 
 2. Proje klasörüne girin:
  cd cafe-reservation-system
@@ -68,7 +68,7 @@ yanıt verebilen arayüzler tercih edilmiştir.
 
 Canlı Yayın ve Kaynaklar
 ● Canlı Sistem URL:
- https://cafe-reservation-system.netlify.app
+ https://selale-cafe-reservation.netlify.app
  
 ● Kaynak Kod:
- https://github.com/gezgin8834/cafe-reservation-system.git
+ https://github.com/gezgin8834/selale-cafe-reservation.git
